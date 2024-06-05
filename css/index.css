@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    width:100%;
+    height:auto;
+    min-height: 100vh;
+}
+
+#header{
+    height:600px;
+    background-image: url("../img/2.jpg");
+    background-position: center;
+    background-size:cover;
+}
+
+  #prodotti{
+        height: 600px;
+        padding-top:200px;
+        padding-left:50px;
+        background-color: rgb(19, 13, 13);
+        background-image:url("../img/prodottiQualita.jpg");
+        background-size: cover;
+  }
+
+  #header button{
+    box-shadow: 4px 4px 20px black;
+    margin: 30px;
+    margin-left:50px;
+    transform: scale(1.5);
+  }
+
+  #assistenza{
+    height: 600px;
+    background-image: url("../img/Supporto-Assistenza.jpg");
+    background-size: cover;
+    padding-top:200px;
+    padding-left:50px;
+  }
+
+  #collegamenti ul, #collegamenti li a{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 13pt;
+    color: red;
+    margin-left: 5px;
+  }
+
+  #collegamenti .row{
+    padding: 0px 50px;
+  }
+
+  #collegamenti .row .list_title{
+    color:white;
+    padding:10px;
+    border-bottom: 2px solid grey;
+    text-align: center;
+  }
+
+  #panoramica_inner, #nuoveTecnologie{
+    font-size: 15pt;
+    padding: 0px 30px;
+    margin: 20px;
+  }
+
+  #nuoveTecnologie button{
+    font-size: 15pt;
+  }
+
+  .hover-zoom10{
+    display: block;
+    transition: all .2s ease-in-out;
+  }
+
+  .hover-zoom10:hover{
+    margin-bottom: 2%;
+    transform: scale(1.02);
+  }
+
+  #infoBody{
+    background-size: cover;
+    overflow: auto;
+    background-image: url("../img/sfondoInfo.jpg");
+  }
+
+  .adjust-height-90{
+    transition: all 0.5s linear;
+  }
+
+  .adjust-height-90:hover{
+    transform: scaleY(1.05);
+    margin: 1% 0px;
+  }
+
+@media screen and (max-width: 1700px) {
+  #demo2 video {
+      height: 800px;
+        transform: scaleX(1.2);
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 1700px) {
+  #demo2 video {
+
+        height: 800px;
+        width:100%;
+        transform: scaleX(1.2);
+    }
+}
+
+
+.componente{
+  border:1px solid black;
+  padding:10px;
+}
+
+.componente:nth-of-type(1){
+  margin-top: 20px;
+}
+
+.wrapper{
+  position: fixed;
+  bottom: 50px;
+  right: -370px;
+  max-width: 345px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px 25px 25px;
+  transition: right 0.2s ease;
+}
+
+.wrapper.show{
+  right: 20px;
+}
+
+.wrapper header{
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+header i{
+  color: #4070f4;
+  font-size: 32px;
+}
+
+header h2{
+  color: #4070f4;
+  font-weight: 500;
+}
+
+.wrapper .data{
+  margin-top: 16px;
+}
+
+.wrapper .data p{
+  color: #333;
+  font-size: 16px;
+}
+
+.data p a{
+  color: #4070f4;
+  text-decoration: none;
+}
+
+.data p a:hover{
+  text-decoration: underline;
+}
+
+.wrapper .buttons{
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons .button{
+  border: none;
+  color: #fff;
+  padding: 8px 0;
+  border-radius: 4px;
+  background: #4070f4;
+  cursor: pointer;
+  width: calc(100% / 2 - 10px);
+  transition: right 0.2s ease;
+}
+
+.buttons .button:hover{
+  background-color: #034bf1;
+}

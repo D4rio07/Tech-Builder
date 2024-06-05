@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content='True' name='HandheldFriendly' />
+  <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+  <!--
+    <script src="bstrp/bootstrap.js"></script>
+    <link rel="stylesheet" href="bstrp/bootstrap.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <title>TechBuilder:>CARRELLO</title>
+  <link rel="icon" href="img/icona.png">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" alink="white">
+  <div id="wrapper">
+    <!-- NAV BAR -->
+
+    <nav class="navbar navbar-dark navbar-dark navbar-expand-sm bg-dark justify-content-center"
+      style="font-size:12pt; margin:0px">
+
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#">
+            <!--Logo--> <img src="img/icona.png" alt="" style="height:60px;">
+          </a>
+        </li>
+        <li class="nav-item mt-3">
+          <a class="nav-link linkTop" href="#prodotti">Prodotti</a>
+        </li>
+        <li class="nav-item mt-3">
+          <a class="nav-link linkTop" href="#assistenza">Assistenza</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav" style="margin-left:20%">
+        <li class="nav-item mt-1">
+          <a class="nav-link" href="builder.html#">Crea</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="acquista.html#"><img src="img/shoppingCart.png" height="25px" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown text-center">
+            <button class="bg-dark border-0" id="dropdownMenuButton" data-bs-toggle="dropdown">
+              <img class="nav-link" src="img/userIcon.png" height="50px" alt="imgUtente">
+            </button>
+            <div class="dropdown-menu">
+
+              <div class="link-list-wrapper" id="userOptionsList">
+
+              </div>
+
+            </div>
+          </div>
+          <!--<a class="nav-link" href="#"><img src="img/userIcon.png" height="30px" alt=""></a>-->
+        </li>
+      </ul>
+
+    </nav>
+
+
+    <!-- MAIN -->
+
+    <div id="carello" class="container-sm text-white bg-dark mt-3 p-3">
+      <div class="row text-center">
+        <div class="col-sm-9 fw-bold">
+          Nome Build
+        </div>
+        <div class="col-sm-3 fw-bold">
+          Costo build
+        </div>
+      </div>
+      <div id="acquisti">
+
+      </div>
+      <div class="row m-2">
+        <div class="col-sm-5">
+
+        </div>
+        <div class="col-sm-7">
+          <button id="btnAcquista" class="btn btn-success" disabled>
+            ACQUISTA
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <div id="collegamenti" class=" container-fluid bg-dark text-decoration-none p-4">
+      <div class="row">
+        <div class="col-sm-4">
+          <h2 class="list_title">Informazioni sull'azienda</h2>
+          <ul class="list-group">
+            <li> <a href="info.html#chisiamo" class="hover-zoom10">Chi siamo</a></li>
+            <li> <a href="info.html#panoramicaAzienda" class="hover-zoom10">Panoramica azienda</a></li>
+            <li> <a href="info.html#nuoveTecnologie" class="hover-zoom10"> Nuove tecnologie </a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-4">
+          <h2 class="list_title">Seguici</h2>
+          <ul class="list-group">
+            <li> <a href="https://www.facebook.com" class="hover-zoom10"> Facebook</a></li>
+            <li><a href="https://www.instagram.com" class="hover-zoom10">Instagram</a></li>
+            <li><a href="https://www.linkedin.com" class="hover-zoom10">Linkedin</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <h2 class="list_title">Contattaci</h2>
+          <ul class="list-group">
+            <li>Telefono <br> +39 334 662 2457
+            <li>
+            <li>Mail <br><a href="mailto:techbuilder@outlook.com" class="hover-zoom10">techbuilder@outlook.com</a> </li>
+          </ul>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="container-fluid" style="color:aliceblue">
+
+          <div class="row">
+
+            <div class="col-sm-12">
+              <h3 class="text-dark text-white mt-4">© 2024 TechBuilder</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!--
+      MODAL LOGIN
+    -->
+
+  <div class="modal fade" id="loginModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">ACCEDI</h4>
+          <button type="button" id="closeLogin" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <form action="#" class="was-validated">
+            <label for="txtUsernameLogin">Username/E-mail<input type="text" id="txtUsernameLogin" class="form-control"
+                required>
+              <p id="loginNameError" style="color:red;visibility: hidden;"> Utente non trovato </p>
+            </label>
+            <label for="txtPasswordLogin">Password<input type="password" id="txtPasswordLogin" class="form-control"
+                required>
+              <p id="loginPasswordError" style="color:red;visibility: hidden;"> password errata </p>
+            </label>
+            <div class="mt-3">
+              <label for="txtRobot"><input type="checkbox" id="txtRobot"
+                  class="form-check form-check-inline form-check-input" required>
+                <p class="d-inline-block" style="margin-top:3px"> NON SONO UN ROBOT</p>
+                <p id="loginRobotError" style="color:red;visibility: hidden;"> Verifica se sei un robot </p>
+              </label>
+            </div>
+            <div class="mt-3">
+              <button type="submit" id="btnAccedi" class="btn btn-dark">ACCEDI</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--
+      MODAL REGISTRAZIONE
+    -->
+
+  <div class="modal fade" id="signupModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">REGISTRAZIONE</h4>
+          <button type="button" class="btn-close" id="closeSignup" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <form action="#" class="was-validated">
+
+            <div class="row">
+              <div class="col-sm-6">
+                <label for="txtUstxtNomeSignername">Nome<input type="text" id="txtNomeSign" class="form-control"
+                    required></label>
+              </div>
+              <div class="col-sm-6">
+                <label for="txtCognomeSign">Cognome<input type="text" id="txtCognomeSign" class="form-control"
+                    required></label>
+              </div>
+            </div>
+
+            <div class="row">
+              <label for="txtDataNascita">Data di nascita<input type="date" id="txtDataNascitaSign" class="form-control"
+                  required></label>
+            </div>
+
+            <div class="row">
+              <label for="txtEmailSign">Email<input type="email" id="txtEmailSign" class="form-control"
+                  required></label>
+            </div>
+
+            <div class="row">
+              <label for="txtUsernameSign">Nickname<input type="text" id="txtUsernameSign" class="form-control"
+                  required></label>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <label for="txtPasswordSign1">Password<input type="password" id="txtPasswordSign1" class="form-control"
+                    required></label>
+              </div>
+              <div class="col-sm-6">
+                <label for="txtPasswordSign2">Ripeti la Password<input type="password" id="txtPasswordSign2"
+                    class="form-control" required></label>
+              </div>
+            </div>
+            <div class="mt-3">
+              <button type="submit" id="btnRegistrati" class="btn btn-dark"
+                style="position:relative;left:40%;">REGISTRATI</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--
+      MODAL ESCI
+    -->
+
+  <div class="modal fade" id="exitModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">LOG-OUT</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <p>SEI SICURO DI VOLER USCIRE DALL'ACCOUNT?</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="btnExit">Yes</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">No</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!--
+      MODAL PROFILO
+    -->
+
+  <div class="modal fade" id="profileModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">PROFILO</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row bg-light">
+            <!-- dati dell'utente -->
+            <div class="row">
+              <div class="col-sm-8 infoUtente">
+                <h3>NOME</h3>
+                <!-- NOME -->
+                <input type="text" class="form-control datoUtente">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8 infoUtente">
+                <h3>COGNOME</h3>
+                <!-- COGNOME -->
+                <input type="text" class="form-control datoUtente">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8 infoUtente">
+                <h3>EMAIL</h3>
+                <!-- EMAIL -->
+                <input type="text" class="form-control datoUtente" readonly>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8 infoUtente">
+                <h3>NICKNAME</h3>
+                <!-- NICKNAME -->
+                <input type="text" class="form-control datoUtente">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8 infoUtente">
+                <h3>DATA DI NASCITA</h3>
+                <!-- DATA DI NASCITA -->
+                <input type="text" class="form-control datoUtente">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8 infoUtente">
+                <h3>PASSWORD</h3>
+                <!-- PASSOWORD -->
+                <input type="text" class="form-control datoUtente">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="btnCloseProfile">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--
+        MODAL RICERCA
+      -->
+
+  <div class="modal fade" id="componentModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title" id="titoloComponente"></h4> <!-- titolo dinamico -->
+        </div>
+
+        <div class="modal-body" id="divComponente">
+          <!-- contenuto dinamico -->
+          <p id="componenti">
+
+          </p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--
+        MODAL ACQUISTI
+      -->
+
+  <button class="d-none" data-bs-target="#confirmModala" data-bs-toggle="modal" id="btnVisConfirm"></button>
+  <div class="modal fade" id="confirmModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">CONFERMA</h4>
+        </div>
+
+        <div class="modal-body" id="divComponente">
+          <p id="componenti">
+            Sei sicuro di voler confermare l'acquisto?
+            Questa azione non potrà essere annullata.
+          </p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" oncilck="confermaAcquisto()">Si</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">No</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
